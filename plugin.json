@@ -1,0 +1,14 @@
+{
+	"id": "nodebb-plugin-spoilers",
+	"name": "Spoilers for NodeBB",
+	"description": "Allows you to embed spoilers in NodeBB post content",
+	"url": "https://github.com/psychobunny/nodebb-plugin-spoilers",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 6 }
+	],
+	"staticDir": "./static",
+	"less": [
+    	"./static/spoilers.less"
+    ]
+}

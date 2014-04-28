@@ -1,0 +1,31 @@
+{
+  "name": "nodebb-plugin-spoilers",
+  "version": "0.0.1",
+  "description": "Spoilers for NodeBB",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "spoiler",
+    "text"
+  ],
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-plugin-spoilers@0.0.1",
+  "_from": "nodebb-plugin-spoilers@~0.0.1"
+}
