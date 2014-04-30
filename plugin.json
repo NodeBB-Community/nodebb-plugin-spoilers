@@ -10,5 +10,8 @@
 	"staticDir": "./static",
 	"less": [
     	"./static/spoilers.less"
-    ]
+    ],
+    "scripts": [
+		"static/spoilers.js"
+	]
 }
