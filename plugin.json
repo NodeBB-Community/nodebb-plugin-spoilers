@@ -9,7 +9,7 @@
 	],
 	"staticDirs": 
 	{
-		"":"./static"
+		"spoilers":"./static"
 	},
 	"less": [
     	"./static/spoilers.less"
