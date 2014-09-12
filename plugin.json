@@ -7,7 +7,10 @@
 	"hooks": [
 		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 6 }
 	],
-	"staticDir": "./static",
+	"staticDirs": 
+	{
+		"spoilers":"./static"
+	},
 	"less": [
     	"./static/spoilers.less"
     ],
