@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/psychobunny/nodebb-plugin-spoilers"
@@ -23,6 +24,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/psychobunny/nodebb-plugin-spoilers/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
   },
   "readme": "",
   "readmeFilename": "README.md",
