@@ -14,9 +14,9 @@ plugin.parse = function(data, callback) {
 };
 
 plugin.parseRaw = function (content, callback) {
+	console.log(content)
 	callback(null, 
-		content.replace(/<p>! *(\((.+?)\))?([\S\s]*?)<\/p>/gm, '</blockquote><blockquote class="spoiler" data-title="$2"><p>$3</p></blockquote><blockquote>')
-		.replace(/<blockquote>\s*<\/blockquote>/g, '')
+		content.replace(/<blockquote>\s*<p>! *(\((.+?)\))?([\S\s]*?)<\/p>\s*<\/blockquote>/gm, '<blockquote class="spoiler" tabindex="-1" data-title="$2"><p>$3</p></blockquote>')
 	);
 };
 

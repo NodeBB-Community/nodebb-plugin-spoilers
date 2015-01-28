@@ -1,15 +1,15 @@
 blockquote.spoiler {
 	background: lighten(@brand-warning, 30%);
 	border-left-color: @brand-warning;
+	cursor: pointer;
+	outline: none;
 
 	p {
 		color: darken(@brand-warning, 30%);
 		opacity: 0;
-		-webkit-transition: opacity 0.5s 0.5s;
-		transition: opacity 0.5s 0.5s;
 	}
 
-	&:hover p {
+	&:focus p {
 		opacity: 1;
 	}
 	
