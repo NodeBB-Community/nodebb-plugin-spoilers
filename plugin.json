@@ -5,7 +5,8 @@
 	"url": "https://github.com/psychobunny/nodebb-plugin-spoilers",
 	"library": "./library.js",
 	"hooks": [
-		{ "hook": "filter:parse.post", "method": "parse", "priority": 6 }
+		{ "hook": "filter:parse.post", "method": "post", "priority": 6 },
+		{ "hook": "filter:parse.raw", "method": "raw", "priority": 6 }
 	],
 	"staticDirs": {
 		"static": "./static"
