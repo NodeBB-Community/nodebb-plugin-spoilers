@@ -8,11 +8,8 @@
 		{ "hook": "filter:parse.post", "method": "parse", "priority": 6 },
 		{ "hook": "filter:parse.raw", "method": "parseRaw", "priority": 6 }
 	],
-	"staticDirs": {
-		"static": "./static"
-	},
-	"less": [
-    	"./static/spoilers.less"
+	"scss": [
+    	"./static/spoilers.scss"
     ],
     "scripts": [
 		"static/spoilers.js"

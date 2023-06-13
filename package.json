@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers"
+    "url": "https://github.com/NodeBB-Community/nodebb-plugin-spoilers"
   },
   "keywords": [
     "nodebb",
@@ -22,10 +22,10 @@
   },
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-plugin-spoilers/issues"
+    "url": "https://github.com/NodeBB-Community/nodebb-plugin-spoilers/issues"
   },
   "nbbpm": {
-    "compatibility": "^0.6.0"
+    "compatibility": "^3.0.0"
   },
   "readme": "",
   "readmeFilename": "README.md",

@@ -1,22 +1,23 @@
 "use strict";
 
-var plugin = {};
+const plugin = module.exports;
 
-plugin.parse = function(data, callback) {
+plugin.parse = function(data) {
 	if (!data || !data.postData || !data.postData.content) {
-	    return callback(null, data);
+	    return data;
 	}
 
-	plugin.parseRaw(data.postData.content, function (err, content) {
-		data.postData.content = content;
-		callback(err, data);
+	data.postData.content = parse(data.postData.content);
+	return data;
+};
+
+plugin.parseRaw = function (content) {
+	return parse(content);
+};
+
+function parse (content) {
+	return content.replace(/<blockquote>\s*<p.*>! *(\((.+?)\))?([\S\s]*?)<\/p>\s*<\/blockquote>/gm, function(match, p1, p2, p3) {
+		return `<blockquote class="spoiler" tabindex="-1" data-title="${p2 || 'Spoiler'}"><p>${p3}</p></blockquote>`;
 	});
-};
+}
 
-plugin.parseRaw = function (content, callback) {
-	callback(null, 
-		content.replace(/<blockquote>\s*<p>! *(\((.+?)\))?([\S\s]*?)<\/p>\s*<\/blockquote>/gm, '<blockquote class="spoiler" tabindex="-1" data-title="$2"><p>$3</p></blockquote>')
-	);
-};
-
-module.exports = plugin;

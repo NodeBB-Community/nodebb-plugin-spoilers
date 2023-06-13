@@ -1,20 +1,20 @@
 blockquote.spoiler {
-	background: lighten(@brand-warning, 30%);
-	border-left-color: @brand-warning;
+	background: lighten($warning, 30%);
+	border-left-color: $warning;
 	cursor: pointer;
 	outline: none;
 
 	p {
-		color: darken(@brand-warning, 30%);
+		color: darken($warning, 30%);
 		opacity: 0;
 	}
 
 	&:focus p {
 		opacity: 1;
 	}
-	
+
 	&:before {
-		color: @brand-warning;
+		color: darken($warning, 30%);
 		content: attr(data-title);
 		font-size: 14px;
 	}
