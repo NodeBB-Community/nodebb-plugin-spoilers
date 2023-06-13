@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-spoilers",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Spoilers for NodeBB",
   "main": "library.js",
   "scripts": {
@@ -29,6 +29,5 @@
   },
   "readme": "",
   "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-spoilers@0.0.1",
   "_from": "nodebb-plugin-spoilers@~0.0.1"
 }
