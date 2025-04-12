@@ -13,4 +13,16 @@ $('document').ready(function() {
 			}
 		});
 	});
+
+	$('body').on('click', '.spoiler > button', function() {
+		var $this = $(this);
+		var $spoiler = $this.closest('.spoiler');
+		if ($spoiler.hasClass('border-warning')) {
+			$spoiler.removeClass('border-warning').addClass('border-success');
+			$spoiler.find('p.d-none').removeClass('d-none').addClass('d-block');
+		} else {
+			$spoiler.removeClass('border-success').addClass('border-warning');
+			$spoiler.find('p.d-block').removeClass('d-block').addClass('d-none');
+		}
+	});
 });

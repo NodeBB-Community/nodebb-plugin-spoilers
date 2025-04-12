@@ -8,10 +8,7 @@
 		{ "hook": "filter:parse.post", "method": "parse", "priority": 6 },
 		{ "hook": "filter:parse.raw", "method": "parseRaw", "priority": 6 }
 	],
-	"scss": [
-    	"./static/spoilers.scss"
-    ],
-    "scripts": [
+	"scripts": [
 		"static/spoilers.js"
 	]
 }

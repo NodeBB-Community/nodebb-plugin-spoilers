@@ -25,7 +25,7 @@
     "url": "https://github.com/NodeBB-Community/nodebb-plugin-spoilers/issues"
   },
   "nbbpm": {
-    "compatibility": "^3.0.0"
+    "compatibility": "^3.0.0 || ^4.0.0"
   },
   "readme": "",
   "readmeFilename": "README.md",
