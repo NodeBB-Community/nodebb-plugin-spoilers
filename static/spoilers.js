@@ -1,10 +1,10 @@
 $('document').ready(function() {
 	require(['composer', 'composer/controls'], function(composer, controls) {
 		composer.addButton('fa fa-eye-slash', function(textarea, selectionStart, selectionEnd) {
-			var prefix = '>! ';
-			var title = '(Spoiler) ';
+			const prefix = '>! ';
+			const title = '(Spoiler) ';
 			if(selectionStart === selectionEnd){
-				var text = 'Text';
+				const text = 'Text';
 				controls.insertIntoTextarea(textarea, prefix + title + text);
 				controls.updateTextareaSelection(textarea, selectionStart + (prefix.length + title.length), selectionStart + (prefix.length + title.length + text.length));
 			} else {
@@ -15,8 +15,8 @@ $('document').ready(function() {
 	});
 
 	$('body').on('click', '.spoiler > button', function() {
-		var $this = $(this);
-		var $spoiler = $this.closest('.spoiler');
+		const $this = $(this);
+		const $spoiler = $this.closest('.spoiler');
 		if ($spoiler.hasClass('border-warning')) {
 			$spoiler.removeClass('border-warning').addClass('border-success');
 			$spoiler.find('p.d-none').removeClass('d-none').addClass('d-block');
